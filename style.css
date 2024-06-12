@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.button{
+    font-size: 40px;
+    color: brown;
+}
+.click{
+    font-family: "clicker script",cursive;
+    font-size: 100px;
+    color: red;
+}

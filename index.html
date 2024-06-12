@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog Landing Page</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<style type="text/tailwindcss">
+		@layer components{
+header{
+	@apply bg-slate-300 ;
+}
+.navbar{
+@apply:bg-white;
+}
+.button{
+	@apply: border:2px;
+	
+}
+}
+
+    </style>
+</head>
+
+<body class="p-2">
+	<header class="md:py-3 sm:p-0 ">
+
+		<nav class="navbar flex gap-10 mt-5  ">
+			<div class="image mb-2 justify-normal "><img src="favicon.ico" alt="My Logo" class="ml-10 sm:h-10 md:h-20"></div>
+			<div class="menu p-2  h-16 ">
+				<ul class="flex gap-4 place-self-end [&>li>a]:text-semibold [&>li>a]:cursor-pointer [&>a]:text-x1;">
+					<a href="#home">
+						<li class="font-bold bg-slate-400 p-2 rounded hover:text-white text-2xl ">Home</li>
+					</a>
+					<a href="#">
+						<li class="font-bold hover:text-white text-2xl bg-slate-400 p-2 rounded">About</li>
+					</a>
+					<a href="#form">
+						<li class="font-bold hover:text-white text-2xl bg-slate-400 p-2 rounded">Contact</li>
+					</a>
+					<a href="#">
+						<li class="font-bold hover:text-white text-2xl bg-slate-400 p-2 rounded">Trending</li>
+					</a>
+					<a href="#Recent Post">
+						<li class="font-bold hover:text-white text-2xl bg-slate-400 p-2 rounded">Recent Post</li>
+					</a>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+
+		<!--xxxxxxxxxxxxxxxxx Featured sectin starts here xxxxxxxxxxxxxxxxx-->
+
+		<div class="max-w-md mx-auto p-4 ">
+			<h1 class="text-5xl font-bold flex items-center justify-center font-sans "><span class="click">B</span>aszi's Blog</h1>
+		</div>
+		<h3 class="font-bold text-3xl ml-3">Featured Post</h3>
+		<div class="featured-section grid grid-cols-3 w-md p-10 pt-12">
+			<div class="mb-12 shadow-md p-4">
+				<h2 class="text-xl font-bold">Latest Post</h2><i class="fa-solid fa-calendar-days"></i>&nbsp;
+				11/06/2024<p class="font-medium">NFF Sack Haed Coach:By Rechard Chucks.</p>
+				<p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla
+					auctor, vestibulum magna sed, convallis ex.</p>
+				<a class="text-orange-500 hover:text-orange-700" href="#">Read More</a>
+			</div>
+			<div class="mb-12 shadow-md p-4">
+				<h2 class="text-xl font-bold">Previous Post</h2><i class="fa-solid fa-calendar-days"></i>&nbsp;
+				03/06/2024<p class="font-medium">Addidas lunch new fahion line in Texas:ABC News</p>
+				<p class="text-gray-600 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla
+					auctor, vestibulum magna sed, convallis ex.</p>
+				<a class="text-orange-500 hover:text-orange-700" href="#">Read More</a>
+			</div>
+
+			<div class="mb-12 shadow-md p-4">
+				<h2 class="text-xl font-bold">Previous Post</h2><i class="fa-solid fa-calendar-days"></i>&nbsp;
+				01/06/2024<p class="font-medium">Nigeria President Appoints New Ministers:Daily Trust</p>
+				<p class="text-gray-600 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla
+					auctor, vestibulum magna sed, convallis ex.</p>
+				<a class="text-orange-500 hover:text-orange-700" href="#">Read More</a>
+			</div>
+		</div>
+		<hr>
+		<!--------Featured Section edns Here  -->
+
+		<!--xxxxxxxxxxx Blog Category Section Starts here  -->
+		<section class="News-category m-5 mb-10" id="home">
+			<h2 class="text-3xl border-3 p-3  font-bold">Blog Category</h2>
+			<div class="grid grid-cols-3 mt-5 gap-3">
+				<div class="card shadow-md rounded p-4">
+					<h2 class="font-medium text-2xl">Politics</h2>
+					<img src="9ja.jpg" class="w-full h-200 object-cover rounded-t" alt="Image">
+					<h5 class="font-bold">John Steve</h5>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus exercitationem
+						officia! Deserunt, aspernatur rerum suscipit a adipisci asperiores perferendis, optio at id,
+						magni pariatur neque exercitationem! Ex, perspiciatis. Perspiciatis.</p>
+					<div class="">
+						<p class=""><i class="fa-solid fa-calendar-days"></i>&nbsp; June 10, 2024</p>
+						<p><i class="fa-regular fa-clock"></i>&nbsp; 11:15pm</p>
+					</div>
+					<button
+						class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Read
+						More .........</button>
+				</div>
+				<div class="card shadow-md rounded p-4">
+					<h3 class="font-medium text-2xl">Tech And IT</h3><img src="apple.jpg" class="w-full h-100 object-cover rounded-t" alt="Image">
+					<h5 class="font-bold">Apple set to lunch open AI: Tech machant.org</h5>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus exercitationem
+						officia! Deserunt, aspernatur rerum suscipit a adipisci asperiores perferendis, optio at id,
+						magni pariatur neque exercitationem! Ex, perspiciatis. Perspiciatis.</p>
+					<div class="">
+						<p class=""><i class="fa-solid fa-calendar-days"></i>&nbsp; June 10, 2024</p>
+						<p><i class="fa-regular fa-clock"></i>&nbsp; 11:15pm</p>
+					</div>
+					<button
+						class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Read
+						More .........</button>
+				</div>
+				<div class="card shadow-md rounded p-4">
+					<h3 class="font-medium text-2xl">Sports</h3><img src="super eagle.jpg" class="w-full h-200 object-cover rounded-t" alt="Image">
+					<h5 class="font-bold">Super Eagles of Nigeria suffers defeat:Basz sports</h5>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus exercitationem
+						officia! Deserunt, aspernatur rerum suscipit a adipisci asperiores perferendis, optio at id,
+						magni pariatur neque exercitationem! Ex, perspiciatis. Perspiciatis.</p>
+					<div class="">
+						<p class=""><i class="fa-solid fa-calendar-days"></i>&nbsp; June 10, 2024</p>
+						<p><i class="fa-regular fa-clock"></i>&nbsp; 11:15pm</p>
+					</div>
+					<button
+						class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Read
+						More .........</button>
+				</div>
+			</div>
+		</section>
+		<hr>
+		<!------Category section ends here  - --->
+
+		<!-----Recent Post Section starts Here-->
+
+		<section class="recent-post" id="Recent Post">
+			<h2 class="text-3xl border-3 p-3  font-bold">Recent Post</h2>
+			<div class="grid grid-cols-4 gap-2">
+				<div class="card bg-white p-4 shadow-md rounded max-w-sm mx-auto">
+					<img src="addidas2.jpg" class="w-full h-64 object-cover rounded-t" alt="Image">
+					<h2 class="text-xl font-bold text-gray-700">Bussiness</h2>
+					<p class="text-lg text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+						amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+					<div class="">
+						<p class=""><i class="fa-solid fa-calendar-days"></i>June 10, 2024</p>
+						<p><i class="fa-regular fa-clock"></i>11:15pm</p>
+					</div>
+					<div>
+						<button
+							class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Read
+							More .........</button>
+					</div>
+				</div>
+
+				<div class="card bg-white p-4 shadow-md rounded max-w-sm mx-auto">
+					<img src="watch.jpg" class="w-full h-64 object-cover rounded-t" alt="Image">
+					<h2 class="text-xl font-bold text-gray-700">Fashion</h2>
+					<p class="text-lg text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+						amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+					<div class="">
+						<p class=""><i class="fa-solid fa-calendar-days"></i>June 10, 2024</p>
+						<p><i class="fa-regular fa-clock"></i>11:15pm</p>
+					</div>
+					<button
+						class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Read
+						More .........</button>
+				</div>
+
+				<div class="card bg-white p-4 shadow-md rounded max-w-sm mx-auto">
+					<img src="tin.jpg" class="w-full h-64 object-cover rounded-t" alt="Image">
+					<h2 class="text-xl font-bold text-gray-700">Politics</h2>
+					<p class="text-lg text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+						amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+					<div class="">
+						<p class=""><i class="fa-solid fa-calendar-days"></i>June 10, 2024</p>
+						<p><i class="fa-regular fa-clock"></i>2:15pm</p>
+					</div>
+					<button
+						class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Read
+						More .........</button>
+				</div>
+
+				<div class="bg-white p-4 shadow-md rounded max-w-sm mx-auto">
+					<img src="sport.jpg" class="w-full h-64 object-cover rounded-t" alt="Image">
+					<h2 class="text-xl font-bold text-gray-700">Sport News</h2>
+					<p class="text-lg text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+						amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+					<div class="">
+						<p class=""><i class="fa-solid fa-calendar-days"></i>June 8, 2024</p>
+						<p><i class="fa-regular fa-clock"></i>11:15pm</p>
+					</div>
+					<button
+						class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Read
+						More .........</button>
+				</div>
+			</div>
+		</section>
+<!--xxxxxxxxxxxxxxxxx Recent Post ends here xxxxxxxxxxxxxxxxx-->
+
+<!--xxxxxxxxxxxxxxxxx Form section begins here xxxxxxxxxxxxxxxxx-->
+		<section
+			class="border border-style-solid bg-slate-200 mt-10 flex border-color-black justify-center items-center px-20  py-20">
+			<form id="form" class=" md:bg-slate-50 p-5 justify-center flex flex-col max-md:w-400 rounded-lg w-1/2">
+				<p class="mb-10 font-bold text-2xl">For latset post and update, subcribe to our newsletter by filling the form bellow</p>
+				<label for="name">Firstname:</label>
+				<input type="text"
+					class="px-4 py-1 text-sm text-black-600 font-semibold h-20 rounded-full border border-purple-600 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+				<br><br>
+				<label for="name">Surname:</label>
+				<input type="text"
+					class="px-4 py-1 text-sm text-purple-600 font-semibold h-20 rounded-full border border-purple-600 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+				<br><br>
+				<label for="email">Email Address:</label>
+				<input type="email"
+					class="px-4 py-1 required: text-sm text-purple-600 h-20 font-semibold rounded-full border border-purple-600 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+				<br><br>
+				<label for="phone">Phone Number:</label>
+				<input type="number"
+					class="px-4 py-1 text-sm text-purple-600 font-semibold h-20 rounded-full border border-purple-600 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+				<br><br>
+				<textarea class="p-4 border-purple-500 border" name="textarea" id="textarea">Comments</textarea><br><br>
+				<button type="submit" value="submit"
+					class="px-4 py-1 text-sm text-purple-900 font-semibold rounded-full border border-purple-900 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Submit</button>
+			</form>
+		</section>
+
+		<!--xxxxxxxxxxxxxxxxx Form section ends here xxxxxxxxxxxxxxxxx-->
+
+		<!--xxxxxxxxxxxxxxxxx Footer section  xxxxxxxxxxxxxxxxx-->
+	</main>
+	<section class="footer bg-slate-400">
+		<div class="row contact d-flex justify-content-center">
+			<div class="col-md-3 ml-2 p-5 gap-2">
+				<p><a href="onlinestore.html"><i class="fa-solid fa-address-book gap-2"></i>&nbsp; Contact us </a></p>
+				<p><i class="fa-solid fa-phone"></i>&nbsp; Mobile: 08121818751</p>
+				<P><i class="fa-regular fa-envelope"></i>&nbsp; Email Address:<a href="Gmail.com" target="_blank"><span>
+							<i>godwinmobile@gmail.com </i></span></a></P>
+			</div>
+			<hr>
+
+			<div class="links flex gap-5 mt-2 mb-3 col-md-7 ml-md-2 justify-content-center p-2 align-items-center">
+				<a href="#"><img src="Whatsapp.ico" class="w-10 ml-5"></a>
+				<a href="#"><img src="twitter.ico" class="w-10 ml-5"></a>
+				<a href="#"><img src="instagram.ico" class="w-10 ml-5"></a>
+				<a href="#"><img src="facebook.ico" class="w-10 ml-5"></a>
+				<div class="copyright col-md-2 d-flex justify-content-center align-items-center"> <span
+						class="ml-5">Copyright © 2024 Gbaszi's Blog</span>.</div>
+			</div>
+
+		</div>
+	</section>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog Landing Page</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer component{
+            ul{
+            @apply flex gap-4 place-self-end [&>li>a]:text-semibold [&>li>a]:cursor-pointer [&>a]:text-x1;
+            }
+            header{
+               @apply bg-orange-500 py-12"
+            }
+        }
+    </style>
+</head>
+<body>
+	<header class="">
+		<div class="">
+			<h1 class="">Baszi's Blog</h1>
+		</div>
+        <nav>
+            <div class="menu">
+              <ul class="">
+                   <a href="#"><li>Home</li></a> 
+                   <a href="#"><li>About</li></a>
+                   <a href="#"><li>Contact</li></a>
+                   <a href="#"><li>Trending</li></a>
+                   <a href="#"><li>Faq</li></a>
+                </ul>
+            </div>
+        </nav>
+	</header>
+	<main class="">
+		<article class="">
+			<h2 class="">Latest Post</h2>
+			<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+			<a class="" href="#">Read More</a>
+		</article>
+		<article class="">
+			<h2 class="">Previous Post</h2>
+			<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+			<a class="" href="#">Read More</a>
+		</article>
+	</main>
+	<footer class="">
+		<div class="">
+			<p class="">Copyright © 2023 Blog Title</p>
+		</div>
+	</footer>
+</body>
+</html>
